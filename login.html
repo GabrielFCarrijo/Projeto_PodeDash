@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <script src="banco.js"></script>
+    <script defer src="./login.js"></script>
+    <title>PokeDash</title>
+</head>
+
+<body>
+    <h1>Bem vindo ao PokeDash</h1>
+    
+    <h1>Bem vindos ao PokeDash para jogar insira seus dados e divirta-se</h1>
+    
+    <br>
+    <div class="aligncenter">
+        <form class="form">
+            <input type="hidden" id="field-id" value="" />
+            <div class="box">
+                <input type="text" id="field-name" class="login-input" />
+                <label for="field-name">Nome</label>
+            </div>
+
+            <div class="box">
+                <input type="text" id="field-pass" class="login-senha" />
+                <label for="field-pass">Senha</label>
+            </div>
+
+            <div class="box">
+                <input type="text" id="field-ponto" class="pontos" />
+                <label for="field-ponto">Insira seus pontos</label>
+            </div>
+            <div class="per"><a id="btn-salvar" class="button">SALVAR</a></div>
+            <div class="per"><a id="btn-deletar" class="button">DELETAR</a></div>
+            <button class="login-button" onclick="salvar()">Jogar</button>
+        </form>
+        <table id="table-register">
+            <thead>
+                <th>Nome</th>
+                <th>Senha</th>
+                <th>Pontos</th>
+            </thead>
+            <tbody id="tbody-register">
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
