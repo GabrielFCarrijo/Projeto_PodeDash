@@ -15,7 +15,7 @@ const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
  
       clearInterval(this.loop);
-      alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
+      alert(`Parabéns, ${spanPlayer.innerHTML}! Seu Score foi: ${timer.innerHTML}`);
   }
 
 const loop = setInterval(() => {
